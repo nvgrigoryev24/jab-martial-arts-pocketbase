@@ -17,3 +17,5 @@ EXPOSE 8090
 
 # Запускаем PocketBase
 CMD ["pocketbase", "serve", "--http=0.0.0.0:8090", "--dir=/pb_data"]
+
+
