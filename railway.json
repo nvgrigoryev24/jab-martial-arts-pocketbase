@@ -1,0 +1,9 @@
+{
+  "build": {
+    "builder": "DOCKERFILE"
+  },
+  "deploy": {
+    "startCommand": "pocketbase serve --http=0.0.0.0:8090 --dir=/pb_data",
+    "healthcheckPath": "/api/health"
+  }
+}

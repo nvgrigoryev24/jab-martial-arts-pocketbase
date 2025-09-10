@@ -1,0 +1,9 @@
+# Игнорируем ненужные файлы
+node_modules
+.git
+.next
+backups
+notes_and_docs
+*.log
+.DS_Store
+Thumbs.db
