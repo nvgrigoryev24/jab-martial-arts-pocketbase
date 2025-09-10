@@ -16,6 +16,6 @@ RUN chmod +x /usr/local/bin/pocketbase
 EXPOSE 8090
 
 # Запускаем PocketBase
-CMD ["pocketbase", "serve", "--http=0.0.0.0:8090", "--dir=/pb_data"]
+CMD ["pocketbase", "serve", "--http=0.0.0.0:8090", "--dir=/pb_data", "--config=/pb_data/pocketbase.yaml"]
 
 

@@ -1,0 +1,52 @@
+# PocketBase Configuration
+# This file contains the main configuration for PocketBase
+
+# Server settings
+server:
+  http: "0.0.0.0:8090"
+  https: ""
+  certFile: ""
+  keyFile: ""
+
+# Admin settings
+admin:
+  email: "admin@jab-martial-arts.com"
+  password: "admin123456"
+
+# Logs settings
+logs:
+  maxDays: 5
+  level: "info"
+
+# Data settings
+data:
+  maxOpenConns: 25
+  maxIdleConns: 25
+  connMaxLifetime: 300000
+
+# Storage settings
+storage:
+  type: "local"
+  local:
+    dir: "/pb_data/storage"
+
+# Settings for CORS
+settings:
+  cors:
+    enabled: true
+    allowedOrigins:
+      - "http://localhost:3000"
+      - "https://jab-martial-arts.vercel.app"
+      - "https://*.vercel.app"
+    allowedMethods:
+      - "GET"
+      - "POST"
+      - "PUT"
+      - "DELETE"
+      - "PATCH"
+      - "OPTIONS"
+    allowedHeaders:
+      - "Content-Type"
+      - "Authorization"
+      - "X-Requested-With"
+    allowCredentials: true
